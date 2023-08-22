@@ -30,11 +30,11 @@
         </div>
     </header>
     <main class="w-[90%] mx-auto">
-      <div class="grid lg:grid-cols-4 mb-6">
-        <div class="col-span-3">
+      <div class="grid lg:grid-cols-4 md:grid-cols-2  mb-6">
+        <div class="lg:col-span-3">
             <section>
                 <h2 class="text-3xl my-6 font-bold">Kitchenware</h2>
-                <div class="grid lg:grid-cols-3 gap-5">
+                <div class="grid lg:grid-cols-3  gap-5">
                     <div class="card bg-base-100 shadow-xl" onclick="total(this)">
                         <figure class="px-10 pt-10">
                           <img src="./images/prod1.png"alt="prduct" class="rounded-xl" />
@@ -97,7 +97,7 @@
             </section>
             <section>
                 <h2 class="text-3xl my-6 font-bold">Sportswear</h2>
-                <div class="grid lg:grid-cols-3 gap-5">
+                <div class="grid lg:grid-cols-3  gap-5">
                     <div class="card bg-base-100 shadow-xl"onclick="total(this)">
                         <figure class="px-10 pt-10">
                           <img  src="./images/prod4.png"alt="prduct" class="rounded-xl" />
@@ -160,7 +160,7 @@
             </section>
             <section>
               <h2 class="text-3xl my-6 font-bold">Furniture</h2>
-              <div class="grid lg:grid-cols-3 gap-5">
+              <div class="grid lg:grid-cols-3  gap-5">
                   <div class="card bg-base-100 shadow-xl" onclick="total(this)">
                       <figure class="px-10 pt-10">
                         <img src="./images/prod7.png"alt="prduct" class="rounded-xl" />
@@ -222,34 +222,36 @@
               </div>
           </section>
         </div>
-        <div class="sticky top-3">
+        <div>
+           <div class="sticky top-0">
             <div class="bg-white lg:mt-20 mx-5 my-9 py-7">
-                <h3 class="text-base font-semibold mx-9 mt-4 mb-2 py-2 px-4">Have coupon?</h3>
-                <input type="text"placeholder="Coupon code" class="w-[50%] ml-5 py-1 px-4 border-2 border-gray-100 rounded"id="discInput">
-                <button class=" bg-gray-300 text-white font-bold relative py-2 -ml-4 rounded px-5"onclick= "discount()" disabled="disabled"  id="btn">apply</button>
-            </div>
-            <div class="bg-white lg:mt-10 mx-5 my-9 py-7" >
-                <ol class="font-bold mx-4  my-4"id="entyData">
-                </ol>
-                <hr>
-                <h2 class="font-bold  mt-4 mx-4">total price: <span id="totalPrice">00</span>TK</h2>
-                <h2 class="font-bold mx-4 mt-4 ">Discount price: <span id="disc">00</span>TK</h2>
-                <h2 class="font-bold mx-4  my-4 ">Total: <span id="total">00</span>TK</h2>
-                <hr class="mb-4">
-                <button class="mx-auto bg-gray-300 text-white font-bold block w-[90%] relative py-2  rounded px-5 -mb-16" onclick="my_modal_5.showModal()"onclick="" id="makePurchase" disabled="disabled">Make Purchase</button>
+              <h3 class="text-base font-semibold mx-9 mt-4 mb-2 py-2 px-4">Have coupon?</h3>
+              <input type="text"placeholder="Coupon code" class="w-[50%] ml-5 py-1 px-4 border-2 border-gray-100 rounded"id="discInput">
+              <button class=" bg-gray-300 text-white font-bold relative py-2 -ml-4 rounded px-5"onclick= "discount()" disabled="disabled"  id="btn">apply</button>
+          </div>
+          <div class="bg-white lg:mt-10 mx-5 my-9 py-7" >
+              <ol class="font-bold mx-4  my-4"id="entyData">
+              </ol>
+              <hr>
+              <h2 class="font-bold  mt-4 mx-4">total price: <span id="totalPrice">00</span>TK</h2>
+              <h2 class="font-bold mx-4 mt-4 ">Discount price: <span id="disc">00</span>TK</h2>
+              <h2 class="font-bold mx-4  my-4 ">Total: <span id="total">00</span>TK</h2>
+              <hr class="mb-4">
+              <button class="mx-auto bg-gray-300 text-white font-bold block w-[90%] relative py-2  rounded px-5 -mb-16" onclick="my_modal_5.showModal()"onclick="" id="makePurchase" disabled="disabled">Make Purchase</button>
 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-  <form method="dialog" class="modal-box ">
-  <div>
-    <img class="mx-auto" src="./images/congo.png" alt="">
-    <h3 class="font-bold text-lg text-center">Congratulations</h3>
-    <p class="py-4 text-center">Your Purchase the product</p>
+<form method="dialog" class="modal-box ">
+<div>
+  <img class="mx-auto" src="./images/congo.png" alt="">
+  <h3 class="font-bold text-lg text-center">Congratulations</h3>
+  <p class="py-4 text-center">Your Purchase the product</p>
+</div>
+  <div class="modal-action">
+      <button class="mx-auto bg-[#E527B2] text-white font-bold block w-[70%] relative py-2  rounded px-5 " id="go-home" onclick="goHome()" id="goHome">Go Home</button>
   </div>
-    <div class="modal-action">
-        <button class="mx-auto bg-[#E527B2] text-white font-bold block w-[70%] relative py-2  rounded px-5 " id="go-home" onclick="goHome()" id="goHome">Go Home</button>
-    </div>
-  </form>
+</form>
 </dialog>
-            </div>
+          </div>
+           </div>
         </div>
       </div>
     </main>
